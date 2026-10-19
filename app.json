@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Merchant",
+    "slug": "merchant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app-icon/android.png",
+    "scheme": "merchant",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/app-icon/ios.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/app-icon/android.png",
+        "backgroundImage": "./assets/app-icon/android.png",
+        "monochromeImage": "./assets/app-icon/android.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.chalapus.merchant"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#fff",
+          "image": "./assets/app-icon/splash.png",
+          "imageWidth": 76
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
