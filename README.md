@@ -1,152 +1,135 @@
-<<<<<<< HEAD
-# Welcome to your Expo app 👋
+<div align="center">
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:38BDF8&height=180&section=header&text=ChapPlus%20Merchant&fontSize=40&fontColor=ffffff&fontAlignY=36&desc=One%20app%20for%20every%20kind%20of%20business&descAlignY=58&descSize=16" alt="ChapPlus Merchant" />
 
-## Get started
+<p><b>📱 Cross-platform Mobile App · iOS & Android</b></p>
 
-1. Install dependencies
+<p>
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux Toolkit" />
+  <img src="https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white" alt="React Hook Form" />
+</p>
 
-   ```bash
-   npm install
-   ```
+</div>
 
-2. Start the app
+## 📖 Overview
 
-   ```bash
-   npx expo start
-   ```
+**ChapPlus Merchant** is a multi-business merchant app built with **React Native & Expo**. A single app adapts to the merchant's business type — **E-commerce store, Hotel, Restaurant or Bus provider** — giving each one its own dashboard, analytics and management tools.
 
-In the output, you'll find options to open the app in a
+## ✨ Key Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🏪 Multi-Business Dashboards
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **E-commerce** — products, orders, top-selling products, analytics
+- **Hotel** — hotel listings, room bookings, analytics
+- **Restaurant** — menu items (add / edit / details), orders
+- **Bus provider** — buses, seat bookings, analytics
 
-## Get a fresh project
+### 💰 Payments
 
-When you're ready, run:
+- Request payouts
+- Payout history
+
+### 🔐 Account
+
+- Registration, login, email & OTP verification, password reset
+- Profile setup, shipping address, notifications
+- Image upload with picker & manipulator
+- Persisted session with Redux Persist & AsyncStorage
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|---|---|
+| **Framework** | React Native 0.86 · Expo SDK 57 |
+| **Language** | TypeScript |
+| **Navigation** | Expo Router (role-based tab groups) |
+| **State** | Redux Toolkit · React Redux · Redux Persist · AsyncStorage |
+| **Forms** | React Hook Form |
+| **Styling** | twrnc (Tailwind for RN) · Expo Linear Gradient |
+| **UI & Media** | Expo Image · Image Picker · Toast Message · Render HTML · Lucide |
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+- [Expo Go](https://expo.dev/go) on your phone, or an Android emulator / iOS simulator
+
+### Installation
 
 ```bash
-npm run reset-project
+git clone https://github.com/moazzembhuiyan/chapplus-merchant-app-react-native-.git
+cd chapplus-merchant-app-react-native-
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Environment Variables
 
-### Other setup steps
+Copy the example file and fill in your values:
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-=======
-# ahmedy_merchant_app
-
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-* [Create](https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file) or [upload](https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file) files
-* [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.betopialimited.com/IshanRana/ahmedy_merchant_app.git
-git branch -M main
-git push -uf origin main
+```bash
+cp .env.example .env
 ```
 
-## Integrate with your tools
+```env
+EXPO_PUBLIC_API_URL=
+```
 
-* [Set up project integrations](https://gitlab.betopialimited.com/IshanRana/ahmedy_merchant_app/-/settings/integrations)
+| Variable | Description |
+|---|---|
+| `EXPO_PUBLIC_API_URL` | Base URL of the backend API |
 
-## Collaborate with your team
+### Run
 
-* [Invite team members and collaborators](https://docs.gitlab.com/user/project/members/)
-* [Create a new merge request](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
-* [Automatically close issues from merge requests](https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically)
-* [Enable merge request approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/)
-* [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+```bash
+npx expo start
+# press a → Android · i → iOS · w → Web, or scan the QR code with Expo Go
+```
 
-## Test and Deploy
+## 📜 Available Scripts
 
-Use the built-in continuous integration in GitLab.
+| Command | Description |
+|---|---|
+| `npm run start` | Start the Expo dev server |
+| `npm run reset-project` | Reset the Expo starter project |
+| `npm run android` | Run on Android |
+| `npm run ios` | Run on iOS |
+| `npm run web` | Run in the browser |
+| `npm run lint` | Run ESLint |
 
-* [Get started with GitLab CI/CD](https://docs.gitlab.com/ci/quick_start/)
-* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/user/application_security/sast/)
-* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/topics/autodevops/requirements/)
-* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/user/clusters/agent/)
-* [Set up protected environments](https://docs.gitlab.com/ci/environments/protected_environments/)
+## 📁 Project Structure
 
-***
+```text
+src/
+├── app/
+│   ├── (auth)/                     # Login, registration, verification
+│   ├── (e-commerce-tab)/           # Store dashboard
+│   ├── (hotel-tab)/                # Hotel dashboard
+│   ├── (restaurant-provider-tab)/  # Restaurant dashboard
+│   ├── (bus-provider-tab)/         # Bus provider dashboard
+│   └── ...                         # Details, payouts, profile screens
+├── redux/ · store/                 # Global state
+└── utils/
+components/                         # Shared UI
+```
 
-# Editing this README
+---
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+<div align="center">
 
-## Suggestions for a good README
+### 👨‍💻 Developed by [Moazzem Hossen Bhuiyan](https://github.com/moazzembhuiyan)
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+<sub>Mobile App Developer (React Native) • Web Developer</sub>
 
-## Name
-Choose a self-explaining name for your project.
+<p>
+  <a href="https://github.com/moazzembhuiyan"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/moazzem-hossen-bhuiyan-325432331/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:moazzembhuiyan394@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+<sub>⭐ If you like this project, consider giving it a star!</sub>
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
->>>>>>> d5f619ce9e1adbd1cff2948444052f8aec80bc5a
+</div>
