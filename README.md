@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:38BDF8&height=180&section=header&text=ChapPlus%20Merchant&fontSize=40&fontColor=ffffff&fontAlignY=36&desc=One%20app%20for%20every%20kind%20of%20business&descAlignY=58&descSize=16" alt="ChapPlus Merchant" />
+<img src=".github/banner.svg" width="100%" alt="ChapPlus Merchant — One app for every kind of business" />
 
 <p><b>📱 Cross-platform Mobile App · iOS & Android</b></p>
 
